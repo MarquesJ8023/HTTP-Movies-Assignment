@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
+import { ButtonContainer } from "../styled-components/Button";
 
 const MovieUpdate = props => {
     const [update, setUpdate] = useState({
@@ -92,10 +93,10 @@ const MovieUpdate = props => {
                     </label>
                 </p>
 
-                <button
+                <ButtonContainer
                     onClick={event => updateMovie(event)}>
                         Update
-                    </button>
+                    </ButtonContainer>
 
             </form>
         </div>
