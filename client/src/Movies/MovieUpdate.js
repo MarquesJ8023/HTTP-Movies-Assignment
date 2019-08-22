@@ -38,8 +38,8 @@ const MovieUpdate = props => {
     };
 
     return (
-        <div>
-            <Form onSubmit={event => updateMovie(event)}>
+        <div className="updateModal">
+            <form className="update-modal" onSubmit={event => updateMovie(event)}>
                 <h1 className="updateTitle">Update Movie</h1>
                 <p className="updateInput">
                     <label>
@@ -97,7 +97,7 @@ const MovieUpdate = props => {
                         Update
                     </button>
 
-            </Form>
+            </form>
         </div>
     );
 };
